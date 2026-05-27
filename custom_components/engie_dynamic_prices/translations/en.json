@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Engie Dynamic Prices",
+        "description": "Configure your Engie contract formula. Buy price = (multiplier * spot + energy_fee) + distribution_fee. Sell price = spot - sell_fee.",
+        "data": {
+          "buy_multiplier": "Buy multiplier",
+          "buy_energy_fee": "Buy energy fee (EUR/kWh)",
+          "buy_distribution_fee": "Buy distribution fee (EUR/kWh)",
+          "sell_fee": "Sell fee (EUR/kWh)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Engie Dynamic Prices is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update contract formula",
+        "data": {
+          "buy_multiplier": "Buy multiplier",
+          "buy_energy_fee": "Buy energy fee (EUR/kWh)",
+          "buy_distribution_fee": "Buy distribution fee (EUR/kWh)",
+          "sell_fee": "Sell fee (EUR/kWh)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": {"name": "Current spot price"},
+      "next_price": {"name": "Next hour spot price"},
+      "average_price": {"name": "Average spot price today"},
+      "min_price": {"name": "Min spot price today"},
+      "max_price": {"name": "Max spot price today"},
+      "current_contract_price": {"name": "Current contract buy price"},
+      "next_contract_price": {"name": "Next hour contract buy price"},
+      "average_contract_price": {"name": "Average contract buy price today"},
+      "min_contract_price": {"name": "Min contract buy price today"},
+      "max_contract_price": {"name": "Max contract buy price today"},
+      "current_sell_price": {"name": "Current sell price"},
+      "next_sell_price": {"name": "Next hour sell price"},
+      "average_sell_price": {"name": "Average sell price today"},
+      "min_sell_price": {"name": "Min sell price today"},
+      "max_sell_price": {"name": "Max sell price today"},
+      "current_price_15min": {"name": "Current 15-min spot price"},
+      "next_price_15min": {"name": "Next 15-min spot price"},
+      "average_price_15min": {"name": "Average 15-min spot price today"},
+      "current_contract_price_15min": {"name": "Current 15-min contract buy price"},
+      "current_sell_price_15min": {"name": "Current 15-min sell price"},
+      "tomorrow_current_price": {"name": "Tomorrow spot price (now)"},
+      "tomorrow_average_price": {"name": "Tomorrow average spot price"},
+      "tomorrow_min_price": {"name": "Tomorrow min spot price"},
+      "tomorrow_max_price": {"name": "Tomorrow max spot price"},
+      "tomorrow_min_contract_price": {"name": "Tomorrow min contract buy price"},
+      "tomorrow_max_contract_price": {"name": "Tomorrow max contract buy price"},
+      "tomorrow_min_sell_price": {"name": "Tomorrow min sell price"},
+      "tomorrow_max_sell_price": {"name": "Tomorrow max sell price"},
+      "tomorrow_average_price_15min": {"name": "Tomorrow average 15-min spot price"},
+      "tomorrow_min_price_15min": {"name": "Tomorrow min 15-min spot price"},
+      "tomorrow_max_price_15min": {"name": "Tomorrow max 15-min spot price"}
+    },
+    "binary_sensor": {
+      "buy_price_negative": {"name": "Spot buy price negative"},
+      "sell_price_negative": {"name": "Sell price below threshold"},
+      "buy_price_15min_negative": {"name": "15-min spot price negative"},
+      "tomorrow_has_negative_prices": {"name": "Tomorrow has negative prices"}
+    }
+  }
+}

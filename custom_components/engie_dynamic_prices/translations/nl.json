@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Engie Dynamische Prijzen",
+        "description": "Configureer uw Engie contractformule. Aankoopprijs = (vermenigvuldiger * spot + energievergoeding) + distributievergoeding. Verkoopprijs = spot - verkoopvergoeding.",
+        "data": {
+          "buy_multiplier": "Aankoopvermenigvuldiger",
+          "buy_energy_fee": "Energievergoeding aankoop (EUR/kWh)",
+          "buy_distribution_fee": "Distributievergoeding aankoop (EUR/kWh)",
+          "sell_fee": "Verkoopvergoeding (EUR/kWh)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Engie Dynamische Prijzen is al geconfigureerd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Contractformule bijwerken",
+        "data": {
+          "buy_multiplier": "Aankoopvermenigvuldiger",
+          "buy_energy_fee": "Energievergoeding aankoop (EUR/kWh)",
+          "buy_distribution_fee": "Distributievergoeding aankoop (EUR/kWh)",
+          "sell_fee": "Verkoopvergoeding (EUR/kWh)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": {"name": "Huidige spotprijs"},
+      "next_price": {"name": "Spotprijs volgend uur"},
+      "average_price": {"name": "Gemiddelde spotprijs vandaag"},
+      "min_price": {"name": "Minimale spotprijs vandaag"},
+      "max_price": {"name": "Maximale spotprijs vandaag"},
+      "current_contract_price": {"name": "Huidige contractaankoopprijs"},
+      "next_contract_price": {"name": "Contractaankoopprijs volgend uur"},
+      "average_contract_price": {"name": "Gemiddelde contractaankoopprijs vandaag"},
+      "min_contract_price": {"name": "Minimale contractaankoopprijs vandaag"},
+      "max_contract_price": {"name": "Maximale contractaankoopprijs vandaag"},
+      "current_sell_price": {"name": "Huidige verkoopprijs"},
+      "next_sell_price": {"name": "Verkoopprijs volgend uur"},
+      "average_sell_price": {"name": "Gemiddelde verkoopprijs vandaag"},
+      "min_sell_price": {"name": "Minimale verkoopprijs vandaag"},
+      "max_sell_price": {"name": "Maximale verkoopprijs vandaag"},
+      "current_price_15min": {"name": "Huidige 15-min spotprijs"},
+      "next_price_15min": {"name": "Volgende 15-min spotprijs"},
+      "average_price_15min": {"name": "Gemiddelde 15-min spotprijs vandaag"},
+      "current_contract_price_15min": {"name": "Huidige 15-min contractaankoopprijs"},
+      "current_sell_price_15min": {"name": "Huidige 15-min verkoopprijs"},
+      "tomorrow_current_price": {"name": "Morgen spotprijs (nu)"},
+      "tomorrow_average_price": {"name": "Morgen gemiddelde spotprijs"},
+      "tomorrow_min_price": {"name": "Morgen minimale spotprijs"},
+      "tomorrow_max_price": {"name": "Morgen maximale spotprijs"},
+      "tomorrow_min_contract_price": {"name": "Morgen minimale contractaankoopprijs"},
+      "tomorrow_max_contract_price": {"name": "Morgen maximale contractaankoopprijs"},
+      "tomorrow_min_sell_price": {"name": "Morgen minimale verkoopprijs"},
+      "tomorrow_max_sell_price": {"name": "Morgen maximale verkoopprijs"},
+      "tomorrow_average_price_15min": {"name": "Morgen gemiddelde 15-min spotprijs"},
+      "tomorrow_min_price_15min": {"name": "Morgen minimale 15-min spotprijs"},
+      "tomorrow_max_price_15min": {"name": "Morgen maximale 15-min spotprijs"}
+    },
+    "binary_sensor": {
+      "buy_price_negative": {"name": "Spot aankoopprijs negatief"},
+      "sell_price_negative": {"name": "Verkoopprijs onder drempel"},
+      "buy_price_15min_negative": {"name": "15-min spotprijs negatief"},
+      "tomorrow_has_negative_prices": {"name": "Morgen negatieve prijzen"}
+    }
+  }
+}
