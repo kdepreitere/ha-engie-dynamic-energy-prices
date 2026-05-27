@@ -1,6 +1,6 @@
 """Constants for the Engie Dynamic Prices integration."""
 
-DOMAIN = "engie_dynamic_prices"
+DOMAIN = "engie_be_dynamic_prices"
 
 # Buy price formula:  contract_buy = (BUY_MULTIPLIER * spot + BUY_ENERGY_FEE) + BUY_DISTRIBUTION_FEE
 CONF_BUY_MULTIPLIER       = "buy_multiplier"

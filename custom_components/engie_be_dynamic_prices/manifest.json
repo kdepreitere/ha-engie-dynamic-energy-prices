@@ -1,5 +1,5 @@
 {
-  "domain": "engie_dynamic_prices",
+  "domain": "engie_be_dynamic_prices",
   "name": "Engie BE Dynamic Prices",
   "version": "1.1.2",
   "config_flow": true,
