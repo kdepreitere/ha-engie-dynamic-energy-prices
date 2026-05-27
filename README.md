@@ -1,4 +1,4 @@
-# Engie Dynamic Prices — Home Assistant Integration
+# Engie BE Dynamic Prices — Home Assistant Integration
 
 A Home Assistant custom component that fetches EPEX day-ahead spot prices published by Engie Belgium and exposes them as sensors with optional contract formula applied.
 
