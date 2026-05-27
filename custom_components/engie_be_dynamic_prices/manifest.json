@@ -1,0 +1,13 @@
+{
+  "domain": "engie_dynamic_prices",
+  "name": "Engie BE Dynamic Prices",
+  "version": "1.1.2",
+  "config_flow": true,
+  "documentation": "https://github.com/kdepreitere/ha-engie-dynamic-energy-prices",
+  "issue_tracker": "https://github.com/kdepreitere/ha-engie-dynamic-energy-prices/issues",
+  "requirements": ["openpyxl>=3.1.0"],
+  "dependencies": [],
+  "codeowners": [],
+  "iot_class": "cloud_polling",
+  "homeassistant": "2024.1.0"
+}

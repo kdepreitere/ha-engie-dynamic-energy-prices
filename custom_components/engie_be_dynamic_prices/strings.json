@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Engie Dynamic Prices",
+        "title": "Engie BE Dynamic Prices",
         "description": "Configure your Engie contract formula. Buy price = (multiplier * spot + energy_fee) + distribution_fee. Sell price = spot - sell_fee.",
         "data": {
           "buy_multiplier": "Buy multiplier",

@@ -1,4 +1,4 @@
-"""Sensor entities for Engie Dynamic Prices."""
+"""Sensor entities for Engie BE Dynamic Prices."""
 from __future__ import annotations
 
 from collections.abc import Callable

@@ -1,4 +1,4 @@
-"""Engie Dynamic Prices integration for Home Assistant."""
+"""Engie BE Dynamic Prices integration for Home Assistant."""
 from __future__ import annotations
 
 from homeassistant.config_entries import ConfigEntry
@@ -19,7 +19,7 @@ PLATFORMS = [Platform.SENSOR, Platform.BINARY_SENSOR]
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Engie Dynamic Prices from a config entry."""
+    """Set up Engie BE Dynamic Prices from a config entry."""
     session = async_get_clientsession(hass)
 
     coordinator = EngieCoordinator(
